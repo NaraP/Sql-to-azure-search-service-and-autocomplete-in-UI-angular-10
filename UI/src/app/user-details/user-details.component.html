@@ -1,0 +1,11 @@
+<!-- <mat-list dense>
+    <mat-list-item *ngFor="let user of data">
+      {{ user.name }} {{user.email}} {{user.phoneNumber}}
+    </mat-list-item>
+  </mat-list> -->
+<div *ngFor="let user of data">
+  <mat-card><p style="font-weight: bold;">Name:</p> {{ user.name }}</mat-card>
+  <mat-card><p style="font-weight: bold;">Phone number:</p>{{user.phoneNumber}}</mat-card>
+  <mat-card><p style="font-weight: bold;">Eamil:</p> {{user.email}}</mat-card>
+  <mat-card><p style="font-weight: bold;">Address:</p> {{ user.address }}</mat-card>
+</div>
